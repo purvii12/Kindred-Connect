@@ -4,16 +4,13 @@
 
 ![Kindred Connect](./assets/home-page.png)
 
-**Where lost hearts find home — connecting orphan children with elderly individuals through meaningful, AI-powered relationships.**
+**Where lost hearts find home-connecting orphan children with elderly individuals through meaningful, AI-powered relationships.**
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![React 18](https://img.shields.io/badge/React-18.3.0-blue?logo=react)](https://react.dev)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)](https://nodejs.org)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue?logo=python)](https://www.python.org)
 [![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange?logo=firebase)](https://firebase.google.com)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
-[![AI Powered](https://img.shields.io/badge/AI-Powered-red?logo=openai)](https://github.com)
+
 
 </div>
 
@@ -31,7 +28,6 @@
 - [Installation & Setup](#installation--setup)
 - [API Endpoints](#api-endpoints)
 - [System Flow](#system-flow)
-- [Dataset](#dataset)
 - [Contributing](#contributing)
 - [Team](#team)
 - [License](#license)
@@ -40,7 +36,11 @@
 
 ## Overview
 
+![System Architecture](./assets/architecture-diagram.png)
+
 Kindred Connect is an innovative AI-powered platform that bridges the emotional gap between isolated orphan children and lonely senior citizens. Through intelligent profile matching, guided sessions, and sentiment analysis, the platform facilitates meaningful relationships that benefit both demographics.
+
+![ML Overview](./assets/ml-overview.png)
 
 The platform uses a sophisticated matching algorithm combined with post-session sentiment analysis to continuously improve connection quality and relationship outcomes. By leveraging Firebase for real-time data management and custom ML models, Kindred Connect enables sustainable, emotionally supportive connections.
 
@@ -50,22 +50,15 @@ The platform uses a sophisticated matching algorithm combined with post-session 
 
 ### The Problem
 
+![Database Schema](./assets/database-schema.png)
+
 - **Orphan children** struggle with emotional isolation, lacking mentors and positive role models
 - **Elderly individuals** experience loneliness and reduced social engagement
 - Traditional mentorship programs lack personalized matching and outcome tracking
-- Manual connection processes are time-consuming and often ineffective
 
 ### The Solution
 
-Kindred Connect automates and optimizes the connection process:
-
-| Aspect | Solution |
-|--------|----------|
-| **Matching** | AI-powered profile matching engine based on interests, personality, and compatibility |
-| **Scalability** | Cloud-based Firebase infrastructure supports thousands of concurrent connections |
-| **Quality Assurance** | Admin approval workflow ensures safety and appropriateness |
-| **Feedback Loop** | Sentiment analysis post-session enables continuous relationship improvement |
-| **Accessibility** | Web-based platform accessible across devices |
+Kindred Connect automates and optimizes the connection process through AI-powered matching and continuous feedback loops.
 
 ---
 
@@ -416,43 +409,6 @@ firebase deploy --only firestore:rules
 
 ---
 
-## Dataset
-
-### Data Collection
-
-Kindred Connect uses a **synthetic dataset** for the initial ML models. This approach ensures:
-- **Privacy**: No real personal data exposed
-- **Ethics**: Compliant with data protection regulations
-- **Flexibility**: Easy to simulate various scenarios
-
-### Synthetic Data Generation
-
-The dataset is generated using `ml-service/scripts/generate_dataset.py` with characteristics inspired by:
-- Recommendation systems (Netflix, Spotify)
-- Dating algorithms (compatibility factors)
-- Child-elder relationship research
-
-### Dataset Fields
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `user_id` | String | Unique user identifier |
-| `age` | Integer | User age (5-17 for children, 60+ for elderly) |
-| `interests` | Array | Hobbies and activities (e.g., reading, gardening) |
-| `personality_traits` | Object | Big Five factors (0-1 scale) |
-| `availability` | Array | Available time slots |
-| `communication_style` | String | Verbal, empathetic, formal, casual |
-| `location` | String | City/region for proximity matching |
-| `compatibility_scores` | Array | Pre-computed match scores |
-
-### Dataset Size
-
-- **Training**: 1,000 synthetic profiles
-- **Test**: 200 synthetic pairs
-- **Located**: `ml-service/dataset/dataset.csv`
-
----
-
 ## UI Preview
 
 ### Home Page
@@ -466,24 +422,6 @@ Landing page showcasing the platform's mission and core features.
 ![Login & Onboarding](./assets/login-n-working.png)
 
 Secure authentication and profile setup flow.
-
-### System Architecture
-
-![Architecture Diagram](./assets/architecture-diagram.png)
-
-Complete system topology and component interactions.
-
-### Database Schema
-
-![Database Schema](./assets/database-schema.png)
-
-Firestore collection structure and data relationships.
-
-### ML Platform Overview
-
-![ML Overview](./assets/ml-overview.png)
-
-Matching engine and sentiment analysis pipeline.
 
 ---
 
@@ -526,11 +464,11 @@ Contributions are welcome! Follow these guidelines:
 
 | Name | Role | GitHub ID |
 |------|------|-----------|
-| Team Lead | Project Architect | @team-lead |
-| Backend Developer | API & Infrastructure | @backend-dev |
-| Frontend Developer | UI/UX Implementation | @frontend-dev |
-| ML Engineer | Models & Analysis | @ml-engineer |
-| DevOps Engineer | Deployment & CI/CD | @devops-eng |
+| Project Architect | System Design & ML Models | [@purvii12](https://github.com/purvii12) |
+| Backend Developer | API & Infrastructure | [@vaibhhaav](https://github.com/vaibhhaav) |
+| Database Engineer | Schema & Data Management | [@Palak-Khurana](https://github.com/Palak-Khurana), [@vaibhhaav](https://github.com/vaibhhaav) |
+| Frontend Developer | UI/UX Implementation | [@aastha-git32](https://github.com/aastha-git32), [@Palak-Khurana](https://github.com/Palak-Khurana), [@satkiran11](https://github.com/satkiran11) |
+| ML Engineer | Models & Analysis | [@purvii12](https://github.com/purvii12) |
 
 ---
 

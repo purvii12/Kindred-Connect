@@ -36,11 +36,7 @@
 
 ## Overview
 
-![System Architecture](./assets/architecture-diagram.png)
-
-Kindred Connect is an innovative AI-powered platform that bridges the emotional gap between isolated orphan children and lonely senior citizens. Through intelligent profile matching, guided sessions, and sentiment analysis, the platform facilitates meaningful relationships that benefit both demographics.
-
-![ML Overview](./assets/ml-overview.png)
+Kindred Connect is an innovative AI-powered platform that bridges the emotional gap between isolated orphan children senior citizens in elder-care homes. Through intelligent profile matching, guided sessions, and sentiment analysis, the platform facilitates meaningful relationships that benefit both demographics.
 
 The platform uses a sophisticated matching algorithm combined with post-session sentiment analysis to continuously improve connection quality and relationship outcomes. By leveraging Firebase for real-time data management and custom ML models, Kindred Connect enables sustainable, emotionally supportive connections.
 
@@ -50,11 +46,9 @@ The platform uses a sophisticated matching algorithm combined with post-session 
 
 ### The Problem
 
-![Database Schema](./assets/database-schema.png)
-
 - **Orphan children** struggle with emotional isolation, lacking mentors and positive role models
 - **Elderly individuals** experience loneliness and reduced social engagement
-- Traditional mentorship programs lack personalized matching and outcome tracking
+- Traditional mentorship programs lack personalized matching and outcome tracking and giving a sense of belongingness.
 
 ### The Solution
 
@@ -96,9 +90,12 @@ Kindred Connect automates and optimizes the connection process through AI-powere
 | | Firebase Auth | Latest |
 | **Deployment** | Firebase Hosting | Cloud |
 
+![Database Schema](./assets/database-schema.png)
+
 ---
 
 ## System Architecture
+
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -140,6 +137,7 @@ Kindred Connect automates and optimizes the connection process through AI-powere
 **Data Layer**: Firebase Firestore for real-time data persistence  
 **ML Layer**: Python microservice for intelligent matching and sentiment analysis  
 
+![System Architecture](./assets/architecture-diagram.png)
 ---
 
 ## AI Models
@@ -172,6 +170,8 @@ Compatibility Score =
 ```
 
 **Output**: Ranked matches with confidence scores (0-100)
+
+![ML Overview](./assets/ml-overview.png)
 
 ### 2. Sentiment Analysis Engine
 

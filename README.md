@@ -482,6 +482,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Kindred Connect** believes that meaningful connections can transform lives. Every match made is a step toward reducing loneliness and building more compassionate communities.
 
-Made with care for those who seek connection. ❤️
+Made with care for those who seek connection. ❤️✨
 
 </div>
